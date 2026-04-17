@@ -1,37 +1,57 @@
-# Getting Started with React UI Components using Next.js
+# Syncfusion React Gantt in Next.js
 
-This application demonstrates the usage of the Syncfusion React Gantt component in Next.js.
+This repository demonstrates a simple Next.js application that uses the Syncfusion React Gantt component.
 
-To know how to configure the Syncfusion React Gantt component in Next.js, refer to the [documentation](https://ej2.syncfusion.com/react/documentation/gantt/nextjs-getting-started).
+## Overview
 
-## Clone the repository
+A small Next.js demo that renders a Syncfusion Gantt chart with hierarchical tasks, dependencies, resources, editing, filtering, and sorting. The page is defined in `src/app/page.tsx` and sample task data is stored in `src/app/datasource.tsx`.
 
-* To clone the sample repository locally, open the command prompt in the desired location and execute the following command.
+## Features
 
-```sh
+- `GanttComponent` from `@syncfusion/ej2-react-gantt`
+- Task mapping for IDs, names, dates, duration, progress, dependencies, and resources
+- `Edit`, `Filter`, and `Sort` services enabled
+- Sample data includes subtasks and project resources
 
-git clone https://github.com/SyncfusionExamples/ej2-nextjs-gantt.git
+## Files of interest
 
-```
+- `src/app/page.tsx` — renders the Gantt chart
+- `src/app/datasource.tsx` — sample task data and resources
+- `src/app/layout.tsx` — root layout file
 
-* Navigate to the project directory:
+## Prerequisites
 
-```sh
-cd ej2-nextjs-gantt
-```
+- Node.js 18+
+- npm
 
-## Installing Packages
+## Installation
 
-Install the required node modules by running the following command:
+Install dependencies from the project root:
 
-```sh
+```bash
 npm install
 ```
 
-## Run the application
+## Run locally
 
-To run the application, use the following command:
+Start the development server:
 
 ```bash
 npm run dev
 ```
+
+Open `http://localhost:3000`.
+
+## Build
+
+Build the app for production:
+
+```bash
+npm run build
+```
+
+## Notes
+
+- Uses `next`, `react`, and `@syncfusion/ej2-react-gantt`.
+- Task data is hardcoded in `src/app/datasource.tsx`.
+- The example enables editable taskbars, resource labels, and dependencies.
