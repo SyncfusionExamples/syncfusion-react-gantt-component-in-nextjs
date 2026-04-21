@@ -1,38 +1,39 @@
 # Syncfusion React Gantt in Next.js
 
-This repository demonstrates a simple Next.js application that uses the Syncfusion React Gantt component.
+This repository contains a simple Next.js application that demonstrates usage of the Syncfusion React Gantt component to visualize and manage project schedules.
 
 ## Overview
 
-A small Next.js demo that renders a Syncfusion Gantt chart with hierarchical tasks, dependencies, resources, editing, filtering, and sorting. The page is defined in `src/app/page.tsx` and sample task data is stored in `src/app/datasource.tsx`.
+This sample showcases a Next.js application using the App Router to render a Syncfusion Gantt chart with hierarchical tasks, dependencies, resources, and built-in editing, filtering, and sorting features. The main page is in `src/app/page.tsx` and sample data is defined in `src/app/datasource.tsx`.
 
 ## Features
 
-- `GanttComponent` from `@syncfusion/ej2-react-gantt`
-- Task mapping for IDs, names, dates, duration, progress, dependencies, and resources
-- `Edit`, `Filter`, and `Sort` services enabled
-- Sample data includes subtasks and project resources
+- **Task field mapping**: Task ID, name, start/end dates, duration, progress, dependencies, and resource assignment
+- **Built‑in support**: Editing, filtering, and sorting capabilities
+- **Hierarchical tasks**: Parent and child tasks with shared resources
 
-## Files of interest
+## Key Files
 
-- `src/app/page.tsx` — renders the Gantt chart
-- `src/app/datasource.tsx` — sample task data and resources
-- `src/app/layout.tsx` — root layout file
+- `src/app/page.tsx` — Renders the Gantt chart and configures services
+- `src/app/datasource.tsx` — Sample hierarchical task and resource data
+- `src/app/layout.tsx` — Root layout file for the App Router
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js (LTS or later)
 - npm
+
+Compatible with modern versions of Next.js and React.
 
 ## Installation
 
-Install dependencies from the project root:
+From the project root directory:
 
 ```bash
 npm install
 ```
 
-## Run locally
+## Run Locally
 
 Start the development server:
 
@@ -40,18 +41,22 @@ Start the development server:
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://localhost:3000` in your browser.
 
 ## Build
 
-Build the app for production:
+Create a production build:
 
 ```bash
 npm run build
 ```
 
+## Technologies
+
+- `next` — React framework
+- `react` — UI library
+- `@syncfusion/ej2-react-gantt` — Gantt chart component
+
 ## Notes
 
-- Uses `next`, `react`, and `@syncfusion/ej2-react-gantt`.
-- Task data is hardcoded in `src/app/datasource.tsx`.
-- The example enables editable taskbars, resource labels, and dependencies.
+Task and resource data are statically defined for demonstration. The example enables task editing, resource labels, and dependency links, focusing on client‑side usage of the React Gantt component within a Next.js App Router setup.
